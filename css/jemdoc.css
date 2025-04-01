@@ -1,0 +1,473 @@
+/* Optimized CSS for jemdoc bilingual interface */
+
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ffffff;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: #000;
+  background-color: #ffffff;
+  text-align: left;
+  margin: 20px auto;
+  padding: 10px 50px 20px;
+  max-width: 1050px;
+  line-height: 1.3;
+}
+
+/* Typography */
+h1, h2, h3 {
+  margin-top: 0.7em;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.2em;
+  line-height: 1.0;
+  padding-top: 0.5em;
+  border-bottom: 2px solid #8a8584;
+}
+
+h1 {
+  font-size: 165%;
+}
+
+h2 {
+  padding-top: 0.8em;
+  font-size: 125%;
+}
+
+h3 {
+  font-size: 110%;
+  border-bottom: none;
+}
+
+h4 {
+  font-weight: lighter;
+  font-size: 0.8em;
+  margin-top: 2.7em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-top: 0.5px solid #8a8584;
+}
+
+h2 + h3 {
+  padding-top: 0.2em;
+}
+
+p {
+  margin: 0 0 0.8em;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+pt {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Links */
+a, a > tt {
+  color: #003399;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FF4D01;
+}
+
+.main_link {
+  font-size: 100%;
+  font-family: georgia;
+  font-weight: 600;
+  color: #08529b;
+}
+
+.main_link:hover {
+  color: #FF4D01;
+}
+
+/* Layout Components */
+#layout-menu {
+  background: #f6f6f6;
+  border: 1px solid #90989c;
+  padding: 0.5em 8px 0;
+  font-size: 1.0em;
+  width: auto;
+  white-space: nowrap;
+  text-align: left;
+  vertical-align: top;
+}
+
+#layout-menu td {
+  background: #f4f4f4;
+  vertical-align: top;
+}
+
+#layout-menu a {
+  line-height: 1.5em;
+  margin-left: 0.5em;
+}
+
+#layout-content {
+  padding: 0 1.0em;
+  border: none;
+  background: white;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Title Area */
+div#toptitle {
+  padding-bottom: 0.2em;
+  margin-bottom: 1.5em;
+}
+
+div#toptitle + h2, div#toptitle + h3 {
+  margin-top: 0;
+}
+
+div#subtitle {
+  margin: 0;
+  padding: 0 0 0.1em;
+}
+
+div#toptitle h1, #layout-content div#toptitle h1 {
+  margin-bottom: 0;
+  padding-bottom: 0.1em;
+  padding-top: 0;
+  margin-top: 0.5em;
+  border-bottom: none;
+}
+
+#layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child {
+  margin-top: -0.7em;
+}
+
+/* Lists */
+ul, ol, dl {
+  margin: 0.2em 0 0.8em;
+  padding-top: 0;
+}
+
+dt {
+  margin: 0.5em 0 0;
+}
+
+dl {
+  margin-left: 20px;
+}
+
+dd {
+  color: #222222;
+}
+
+dd > *:first-child {
+  margin-top: 0;
+}
+
+ul {
+  list-style-position: inherit;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+p + ul, p + ol {
+  margin-top: -0.5em;
+}
+
+li ul, li ol {
+  margin-top: 1em;
+}
+
+ol {
+  list-style-position: outside;
+  list-style-type: decimal;
+}
+
+li p, dd p {
+  margin-bottom: 0.3em;
+}
+
+ol ol {
+  list-style-type: lower-alpha;
+}
+
+ol ol ol {
+  list-style-type: lower-roman;
+}
+
+/* Code and Pre */
+tt {
+  background: #b4babd;
+}
+
+pre, tt {
+  font-size: 90%;
+  font-family: monaco, monospace;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+/* Code Colors */
+span.pycommand {
+  color: #000070;
+}
+
+span.statement {
+  color: #008800;
+}
+
+span.builtin {
+  color: #000088;
+}
+
+span.special {
+  color: #990000;
+}
+
+span.operator {
+  color: #880000;
+}
+
+span.error {
+  color: #aa0000;
+}
+
+span.comment, span.comment > *, span.string, span.string > * {
+  color: #606060;
+}
+
+/* Tables */
+table#tlayout {
+  border: none;
+  border-collapse: separate;
+  background: white;
+}
+
+table + table {
+  margin-top: 1em;
+}
+
+tr.heading {
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+table.imgtable, table.imgtable td {
+  border: none;
+  text-align: left;
+}
+
+/* Content Blocks */
+p + div.codeblock {
+  margin-top: -0.6em;
+}
+
+div.codeblock, div.infoblock {
+  margin-right: 0%;
+  margin-top: 1.2em;
+  margin-bottom: 1.3em;
+}
+
+div.blocktitle {
+  font-weight: bold;
+  color: #cd7b62;
+  margin-top: 1.2em;
+  margin-bottom: 0.1em;
+}
+
+div.blockcontent {
+  border: 1px solid silver;
+  padding: 0.3em 0.5em;
+}
+
+div.infoblock > div.blockcontent {
+  background: #ffffee;
+}
+
+div.blockcontent p + ul, div.blockcontent p + ol {
+  margin-top: 0.4em;
+}
+
+div.infoblock p {
+  margin-bottom: 0;
+}
+
+div.infoblock li p, div.infoblock dd p {
+  margin-bottom: 0.5em;
+}
+
+div.infoblock p + p {
+  margin-top: 0.8em;
+}
+
+div.codeblock > div.blockcontent {
+  background: #f6f6f6;
+}
+
+/* Footer */
+div#footer {
+  font-size: small;
+  border-top: 1px solid #c0c0c0;
+  padding-top: 0.1em;
+  margin-top: 4.0em;
+  color: #c0c0c0;
+}
+
+div#footer a {
+  color: #80a0b0;
+}
+
+div#footer-text {
+  float: left;
+  padding-bottom: 8px;
+}
+
+/* Images */
+img {
+  border: none;
+}
+
+img.eq {
+  padding: 0 0.1em;
+  margin: 0;
+}
+
+img.eqwl {
+  padding: 0.6em 0 0.2em 2em;
+  margin: 0;
+}
+
+.roundImg {
+  height: 200px;
+  border-radius: 18%;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+/* Specialized UI Elements */
+.dot {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+}
+
+/* Scrollable News Container */
+.news-container {
+  max-height: 180px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.scrollable-content {
+  padding-right: 20px;
+}
+
+/* Custom Scrollbar */
+.news-container::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.news-container::-webkit-scrollbar-thumb {
+  background-color: #d8d7d7;
+}
+
+/* Navigation Bar */
+.navbar-container {
+  background-color: #ffffff;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  font-size: 20px;
+}
+
+/* Navbar List and Content */
+.navbar-container ul {
+  display: flex;
+}
+
+.navbar-container li {
+  margin-right: 30px;
+}
+
+.home {
+  margin-top: 60px;
+}
+
+.clickable-area {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Table Layouts */
+.content-table td {
+  vertical-align: top;
+  padding: 10px;
+  text-align: justify;
+  width: 25%;
+}
+
+.table-container {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+/* Media Queries */
+@media print {
+  #layout-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px 20px;
+  }
+
+  .navbar-container {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .navbar-container ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-container li {
+    margin: 5px 0;
+  }
+
+  .home {
+    margin-top: 120px;
+  }
+
+  .content-table td {
+    width: 100%;
+    display: block;
+  }
+}
